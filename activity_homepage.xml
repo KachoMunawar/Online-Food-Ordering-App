@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.HomePageActivity"
+    android:background="@drawable/adminappbackg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/image_corner"
+        android:src="@drawable/title_img"
+        />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_marginTop="250dp"
+        android:text="Menu" />
+
+    <Button
+        android:id="@+id/cartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cart"
+        android:layout_below="@+id/menuButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Profile"
+        android:layout_below="@+id/cartButton"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/OrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Delivered"
+        android:layout_below="@+id/profileButton"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/HistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Order History"
+        android:visibility="invisible"
+        android:layout_below="@+id/OrderButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

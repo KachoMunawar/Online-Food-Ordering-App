@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/adminappbackg"
+    tools:context=".AdminDashBoardActivity">
+    <TextView
+        android:id="@+id/adminDashboardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Admin Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addfoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Add Food Items"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/adminDashboardTitle"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/viewFoodItemsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="View Food Items"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addfoodButton"
+         />
+
+    <Button
+        android:id="@+id/manageOrdersButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Manage Orders"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFoodItemsButton" />
+
+    <Button
+        android:id="@+id/manageUsersButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Users List"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/manageOrdersButton" />
+
+    <Button
+        android:id="@+id/updateuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateuser"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:text="Update user"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/manageUsersButton"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageUsersButton" />
+
+    <Button
+        android:id="@+id/deleteuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Delete user"
+        android:visibility="invisible"
+        android:onClick="deleteuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toEndOf="@+id/updateuser"
+        app:layout_constraintTop_toBottomOf="@+id/manageUsersButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
