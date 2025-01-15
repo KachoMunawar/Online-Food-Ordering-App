@@ -1,1 +1,1 @@
-# Online-Food-Ordering-App
+# Online-Food-Ordering-App is an Android application designed for admins and customers to streamline food ordering and management.                                     #Customers can browse the menu, add items to their cart, place orders, and view order updates in real time. Admins can manage menus, and update order statuses directly from the app.
